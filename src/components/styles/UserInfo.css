@@ -1,0 +1,108 @@
+.user-info {
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 100ms ease-in-out;
+}
+
+.user-info:hover {
+  transform: scale(1.02);
+}
+
+.user-info__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-info__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.user-info__content {
+  display: block;
+  color: #d3d3d3;
+}
+
+.user-info__name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0f0f2d;
+
+  text-align: center;
+}
+
+.user__hr-hr {
+  border-color: #e5e5e5;
+  width: 341px;
+  height: 0px;
+  top: 287.5px;
+  left: 121px;
+  gap: 0px;
+  border: 0.5px 0px 0px 0px;
+  opacity: 0px;
+}
+.user-info__birthday {
+  color: #302f2f;
+}
+
+.user-info__actions {
+  display: flex;
+  gap: 0.5em;
+}
+
+.user-info__email {
+  color: #302f2f;
+}
+
+.user-info__buttons {
+  display: flex;
+  gap: 0.5em;
+  padding-left: 150px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.button--delete {
+  background-color: #ff5555;
+  color: #fff;
+}
+
+.button--edit {
+  background-color: #0077ff;
+  color: #fff;
+}
+
+.user__icon {
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .user-info__grid {
+    flex-direction: column;
+  }
+
+  .user-info {
+    max-width: 100%;
+  }
+}
