@@ -11,7 +11,8 @@ function App() {
 
   const [modalCreateIsOpen, setModalCreateIsOpen] = useState(false);
 
-  const BASEURL = "https://users-crud.academlo.tech";
+  const BASEURL = "https://users-crud-sejr.onrender.com";
+  //"https://users-crud.academlo.tech";
 
   const [users, getUsers, createUsers, deleteUsers, updateUsers] =
     useCrud(BASEURL);
